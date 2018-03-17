@@ -19,3 +19,6 @@ This script will:
 3. Launch
 
 
+
+![Alt text](screenshots/sandboxie-screen1.png)
+![Alt text](screenshots/sandboxie-screen2.png)
