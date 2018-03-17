@@ -1,0 +1,49 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Firefox\Capabilities]
+"ApplicationDescription"="Mozilla Firefox"
+"ApplicationIcon"="C:\\Sandbox\\Eneerge\\Firefox\\drive\\C\\Program Files\\Mozilla Firefox\\firefox.exe,0"
+"ApplicationName"="Mozilla Firefox"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Firefox\Capabilities\FileAssociations]
+".htm"="FirefoxURL"
+".html"="FirefoxURL"
+".shtml"="FirefoxURL"
+".xht"="FirefoxURL"
+".xhtml"="FirefoxURL"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Firefox\Capabilities\URLAssociations]
+"ftp"="FirefoxURL"
+"http"="FirefoxURL"
+"https"="FirefoxURL"
+
+; Register to Default Programs
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"Mozilla Firefox"="Software\\Firefox\\Capabilities"
+
+; FirefoxURL HANDLER:
+
+[HKEY_LOCAL_MACHINE\Software\Classes\FirefoxURL]
+@="Firefox Document"
+"FriendlyTypeName"="Firefox Document"
+
+[HKEY_LOCAL_MACHINE\Software\Classes\FirefoxURL\DefaultIcon]
+@="C:\\Sandbox\\Eneerge\\Firefox\\drive\\C\\Program Files\\Mozilla Firefox\\firefox.exe,3"
+
+[HKEY_LOCAL_MACHINE\Software\Classes\FirefoxURL\shell]
+
+[HKEY_LOCAL_MACHINE\Software\Classes\FirefoxURL\shell\open]
+
+[HKEY_LOCAL_MACHINE\Software\Classes\FirefoxURL\shell\open\command]
+@="\"D:\\Windows\\Software\\Sandboxie\\SandboxieReflector\\Reflector.exe\" /exec Firefox /p file \"%1\""
+;@="\"C:\\Sandbox\\Eneerge\\Firefox\\drive\\C\\Program Files\\Mozilla Firefox\\Firefox.exe\" \"%1\""
+
+
+
+
+[HKEY_CLASSES_ROOT\Applications\Reflector.exe]
+"FriendlyAppName"="Firefox Document"
+
+[HKEY_CLASSES_ROOT\Applications\Reflector.exe\DefaultIcon]
+@="C:\\Sandbox\\Eneerge\\Firefox\\drive\\C\\Program Files\\Mozilla Firefox\\firefox.exe,0"
